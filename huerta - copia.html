@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head> 
+<meta charset=”utf-8”>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="styloventa.css" />
+<script src="app.js" async></script>
+
+</head>
+<body>
+
+<header>
+	<div>
+		<a href=index.html><img src="images/logo.png" class="logo1"></a>
+	</div>
+	<div>
+		<img src="images/la_huerta.jpg"  class="logo2">
+	</div>
+
+	<div class="titulo">
+		<h1>RESTAURANTES CAPINOTEÑOS</h1>
+		<p class="titulo">La Huerta</p>
+	</div>
+
+</header>
+
+<nav>
+
+</nav>
+<main class="contenedor">
+ <!--     <section > -->
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Charque</span>
+                <img src="images/charque.png" alt="Charque" class="img-item">
+                <span class="precio-item">30,00 Bs.</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pique Macho</span>
+                <img src="images/pique.png" alt="Pique Macho" class="img-item">
+                <span class="precio-item">25,00 Bs.</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Jugo de Remolacha</span>
+                <img src="images/remolacha.jpg" alt="Jugo de Remolacha" class="img-item">
+                <span class="precio-item">5,00 Bs.</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+
+ <!--    </section>  -->
+
+		
+<!--  ACA VIENE  section class="box2" 
+	<section class="box2">
+		<h3>La Huerta - Realiza tu Pedido</h3>
+		<br>
+		<hr>
+		<form action="recibirForm.php" method="POST" class="row g-3">
+			<div class="col-md-6">
+			  <p class="form-label">Nombre</p>
+			  <input type="text" name="nombre" size=30  class="form-control" required />
+			</div>
+			<div class="col-md-6">
+			  <p class="form-label">Teléfono</p>
+			  <input type="number" name="number" size=12 class="form-control" required />
+			</div>
+			<div class="col-12">
+			  <p class="form-label">Dirección</p>
+			  <input type="text" name="address" size=55 class="form-control" required />
+			</div>
+			<hr><br>
+			<div class="col-md-4">
+
+			 <table>
+				<tr>
+					<th>Producto</th><th>Cantidad</th><th>Precio <br> Unitario</th><th>Precio <br> Total</th>
+				</tr>
+				<tr>
+					<td>
+						<select name="plato" id="form-select_1"  onchange="cotiza_1()" required>
+							<option value=""></option>
+							<option value="30">Charque</option>
+							<option value="25">Pique Macho</option>
+							<option value="12">Jugo de Remolacha</option>
+						</select>
+					</td>
+					<td>
+						<input type="number" name="number_1" size=6 id="cant_1" required />
+					</td>
+					<td>
+						<input type="number" name="number_2" size=5 id="precio_u_1"  disabled />
+					</td>
+					<td>
+						<input type="number" name="number_3" size=6 id="precio_t_1"  disabled />
+					</td>
+				</tr>
+				<script>
+					function cotiza_1() {
+						var precc = document.getElementById("form-select_1").value;
+						document.getElementById("precio_u_1").innerHTML = precc;
+					}
+				</script>
+						<select name="plato" class="form-select_2" required>
+							<option value=""></option>
+							<option value="Charque">Charque</option>
+							<option value="Pique Macho">Pique Macho</option>
+							<option value="Jugo de Remolacha">Jugo de Remolacha</option>
+						</select>
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="cant" required />
+					</td>
+					<td>
+						<input type="number" name="number" size=5 class="precio_u"  disabled />
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="precio_t"  disabled />
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<select name="plato" class="form-select_3" required>
+							<option value=""></option>
+							<option value="Charque">Charque</option>
+							<option value="Pique Macho">Pique Macho</option>
+							<option value="Jugo de Remolacha">Jugo de Remolacha</option>
+						</select>
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="cant" required />
+					</td>
+					<td>
+						<input type="number" name="number" size=5 class="precio_u"  disabled />
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="precio_t"  disabled />
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<select name="plato" class="form-select_4" required>
+							<option value=""></option>
+							<option value="Charque">Charque</option>
+							<option value="Pique Macho">Pique Macho</option>
+							<option value="Jugo de Remolacha">Jugo de Remolacha</option>
+						</select>
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="cant" required />
+					</td>
+					<td>
+						<input type="number" name="number" size=5 class="precio_u"  disabled />
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="precio_t"  disabled />
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+						<select name="plato" class="form-select_5" required>
+							<option value=""></option>
+							<option value="Charque">Charque</option>
+							<option value="Pique Macho">Pique Macho</option>
+							<option value="Jugo de Remolacha">Jugo de Remolacha</option>
+						</select>
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="cant" required />
+					</td>
+					<td>
+						<input type="number" name="number" size=5 class="precio_u"  disabled />
+					</td>
+					<td>
+						<input type="number" name="number" size=6 class="precio_t"  disabled />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" class=total>TOTAL A PAGAR ...............</td>
+					<td>
+						<input type="number" name="number" size=6 class="form-venta"  disabled />
+					</td>
+				</tr>
+				</table>
+			</div>
+			<br>
+			<div class="col-12 text-center">
+			  <button type="submit" class="btn-primary">
+				Enviar mi Pedido
+			  </button>
+			</div>
+		  </form>
+-–>
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="tacho">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        0,00 Bs.
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+
+
+	
+	</section>
+
+		
+
+</main>
+
+<footer>
+	<marquee behavior="alternate"><p>Buen Retiro - Provincia Capinota - Octubre 2024 - "Jasmin Rodriguez V."  </p></marquee>
+</footer>
+
+</body>
+
+
+</html>
